@@ -16,6 +16,7 @@ import Summary from './src/comps/Summary';
 import Actions from './src/comps/Actions';
 import StockList from './src/comps/StockList';
 import Navbar from './src/comps/Navbar';
+
 const App = () => {
   return (
     <View style={styles.container}>
@@ -33,6 +34,7 @@ const App = () => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {flex: 1, backgroundColor: palettes().primary},
 });

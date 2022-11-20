@@ -2,7 +2,7 @@ import {MMKVLoader} from 'react-native-mmkv-storage';
 import {NativeModules} from 'react-native';
 
 export const MMKV = new MMKVLoader().initialize();
-//let string: string = MMKV.getString('color-theme') ?? 'main';
+
 export const setColorTheme = () => {
   const colors = ['pistachio', 'main', 'red'];
   let currentValue = MMKV.getString('color-theme') ?? 'main';
@@ -52,4 +52,3 @@ const margin = (multiplier: number): number => multiplier * 8;
 
 export {margin, padding};
 export default palettes;
-//https://stackoverflow.com/questions/70925754/async-storage-to-store-theme-in-react-native
